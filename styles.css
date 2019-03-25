@@ -31,7 +31,7 @@ header {}
 }
 
 .footerinfo {
-    text-align: center;
+    text-align: left;
     background-color: #28292c;
     position: fixed;
     left: 0;
@@ -42,11 +42,18 @@ header {}
 }
 
 footer img {
-    width: 10%;
+    width: 50px;
+
 
 }
 
 footer ul li {
     display: inline;
     margin: 10px;
+}
+
+footer p {
+    line-height: 25px;
+    text-indent: 50px;
+
 }
