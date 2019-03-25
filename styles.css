@@ -23,11 +23,13 @@ header {}
     float: right;
     margin: 10px;
     font-family: 'Exo 2', sans-serif;
+    font-weight: lighter;
+    margin-top: 15px;
 }
 
 .menu img {
     margin: 10px;
-    width: 20%;
+    width: 200px;
 }
 
 .footerinfo {
@@ -53,7 +55,8 @@ footer ul li {
 }
 
 footer p {
-    line-height: 25px;
+    line-height: 1.7;
     text-indent: 50px;
+    font-weight: lighter;
 
 }
