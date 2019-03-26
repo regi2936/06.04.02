@@ -12,6 +12,7 @@ body {
     cursor: pointer;
     color: white;
     font-family: 'Exo 2', sans-serif;
+    padding-right: 10px;
 
 }
 
@@ -79,6 +80,11 @@ body {
 
 
 /***/
+#burger img {
+    width: 200px;
+    padding: 10px;
+    position: absolute;
+}
 
 .menu2 {
 
