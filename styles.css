@@ -64,6 +64,19 @@ body {
         display: none;
     }
 
+    .sectionwrapper {
+        /*
+    display: flex;
+    flex-wrap: wrap;
+*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+
+
+    }
+
 
 
 }
@@ -144,6 +157,10 @@ body {
     font-family: 'Exo 2', sans-serif;
     padding: 30px;
     color: white;
+    /*
+    flex-grow: 2;
+    flex-basis: 300px;
+*/
 
 
 }
@@ -192,11 +209,16 @@ footer p {
 }
 
 
+
+
 .container {
     width: 80%;
-    min-width: 400px;
-    margin: 0 auto;
-    padding-top: 20px;
+    min-width: 200px;
+    margin: 0;
+    padding: 20px;
+    max-width: 500px;
+    flex-grow: 1;
+    flex-basis: 250px;
 
 
 }
