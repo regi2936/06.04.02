@@ -2,9 +2,85 @@ body {
     background-color: #373C46;
 }
 
-header {}
 
-.menu {
+
+
+
+/*BURGERMENU*/
+#menuknap {
+    text-align: left;
+    font-size: 3rem;
+    cursor: pointer;
+    color: white;
+
+    font-family: 'helvetica', sans-serif;
+}
+
+#menu {
+    transition: transform 0.3s;
+    list-style-type: none;
+    transform-origin: top right;
+
+    text-align: left;
+    padding-bottom: 20px;
+    background-color: rgba(239, 170, 0, 0.9);
+    width: 300px;
+}
+
+#burger {
+    width: 200px;
+    z-index: 2;
+    margin-left: 20px
+}
+
+#menu li {
+    padding-top: 30px;
+    display: block;
+    text-align: left;
+
+
+}
+
+#menu a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+/*BURGERMENU SLUT*/
+
+@media only screen and (min-width: 700px) {
+
+
+    #burger {
+        display: none;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 700px) {
+
+
+    .menu2 {
+        display: none;
+    }
+
+
+
+}
+
+
+/***/
+
+.menu2 {
 
     background-color: #28292c;
     width: 100%;
@@ -16,7 +92,7 @@ header {}
 }
 
 
-.menu a {
+.menu2 a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -27,7 +103,7 @@ header {}
     margin-top: 15px;
 }
 
-.menu img {
+.menu2 img {
     margin: 10px;
     width: 200px;
 }
@@ -41,6 +117,12 @@ header {}
     width: 100%;
     color: white;
     font-family: 'Exo 2', sans-serif;
+}
+
+.splash img {
+    width: 100%;
+    margin: 0;
+
 }
 
 footer img {
@@ -59,4 +141,33 @@ footer p {
     text-indent: 50px;
     font-weight: lighter;
 
+}
+
+
+.container {
+    position: absolute;
+
+    width: 50%;
+    min-width: 400px;
+    margin: 0 auto;
+
+
+}
+
+#barchart {
+    border: 2px solid #333;
+
+}
+
+.lines {
+    stroke: #333;
+}
+
+.bar {
+    stroke: #b7b7bf;
+    stroke-width: 25;
+}
+
+text {
+    font-size: 0.8rem;
 }
