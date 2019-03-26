@@ -1,5 +1,6 @@
 body {
     background-color: #373C46;
+    margin: 0;
 }
 
 
@@ -108,10 +109,35 @@ body {
     width: 200px;
 }
 
+.text1 {
+
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    padding: 30px;
+    font-weight: lighter;
+
+}
+
+.text2 {
+
+    color: 28292c;
+    background-color: #dedede;
+    font-family: 'Exo 2', sans-serif;
+    padding: 30px;
+
+}
+
+h2 {
+    font-size: 1.8rem
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
 .footerinfo {
     text-align: left;
     background-color: #28292c;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -145,22 +171,21 @@ footer p {
 
 
 .container {
-    position: absolute;
-
-    width: 50%;
+    width: 80%;
     min-width: 400px;
     margin: 0 auto;
+    padding-top: 20px;
 
 
 }
 
 #barchart {
-    border: 2px solid #333;
+    /*    border: 2px solid #2ff700;*/
 
 }
 
 .lines {
-    stroke: #333;
+    stroke: rgba(47, 247, 0, 0.49);
 }
 
 .bar {
