@@ -12,12 +12,13 @@
 
 <body>
     <header>
-
-       <nav id="burger">
+        <img src="logo.svg" alt="">
+        <nav id="burger">
             <div id="menuknap">☰</div>
             <ul id="menu" class="hidden">
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="menu.html">Menukort</a></li>
+                <li><a href="index.html">FORSIDE</a></li>
+                <li><a href="videomatriale.html">VIDEO</a></li>
+                <li><a href="info.html">INFO</a></li>
             </ul>
         </nav>
 
@@ -40,14 +41,37 @@
         <p>Selv erfarne cyklister skal passe på i trafikken. Op på cyklen og vis dine nærmeste at du er kongen eller dronningen af cykelstien.</p>
     </div>
 
-    <div class="text2">
-       <h3>Bliv set</h3>
-        <p>Cyklister i gruppen +65 skal også give tegne på cykelstien. Man skal huske at være et godt forbillede for de nye eller mindre erfarne cyklister. Hvis verden at det er sejt at bruge cykelhjelm reflexer og reflexvest. </p>
+
+    <div id="piechart">
+        <div>
+            <svg class="piechart" viewbox="0 0 200 200">
+                <circle r="100" cx="100" cy="100" class="pie1" />
+                <circle r="100" cx="100" cy="100" class="pie2" />
+                <circle r="100" cx="100" cy="100" class="pie3" />
+            </svg>
+            <button class="cykel" data-sikkerhed="10"><img src="cykel.svg" alt=""></button>
+            <button class="hjelm" data-sikkerhed="50"><img src="hjelm.svg" alt=""></button>
+            <button class="lygte" data-sikkerhed="40"><img src="lygte.svg" alt=""></button>
+
+        </div>
+
+
     </div>
 
 
+    <div class="text2">
+        <h3>Bliv set</h3>
+        <p>Cyklister i gruppen +65 skal også give tegne på cykelstien. Man skal huske at være et godt forbillede for de nye eller mindre erfarne cyklister. Hvis verden at det er sejt at bruge cykelhjelm reflexer og reflexvest. </p>
+    </div>
 
-        <div class="container">
+    <div class="text3">
+        <h2>Skader</h2>
+        <p>Dræbte og alvorlige skader pr. 10.000
+            2013-2017
+        </p>
+    </div>
+
+    <div class="container">
         <svg id="barchart" viewbox="0 0 430 220">
             <g class="bgr">
                 <line class="lines" x1="25" y1="10" x2="420" y2="10" />
@@ -96,20 +120,24 @@
 
     </div>
 
+    <div class="text4">
+        <p>I statistikken opgøres der antallet af skader efter hvor mange danskere der er i de enkelte alders anvisninger. Der er et fald ved omkring de 60 år da mange mennesker her stopper med at cykle på grund af pension der gør at der ikke er de faste cykelture til og fra arbejde</p>
+    </div>
 
-<footer class="footerinfo">
-    <p>Følg Rådet for Sikker Trafik på de sociale medier</p>
-    <ul>
-        <li><a href="https://www.facebook.com/sikkertrafik"><img src="ficon.svg" alt=""></a></li>
-        <li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFceeg8J8M7PgAAAWm0kH1QnIKs9R_8SUgExA4OsYw3nDISqnkOSTxMM2960CUCcvQ6m-zBY2Tdm2pNOA9xXQQtjDb37wPI6ItvYvR_tk9XXPOzlpMM8rB0eG7ne5Lz6_nwHLo=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fr-det-for-sikker-trafik"><img src="iicon.svg" alt=""></a></li>
-        <li><a href="https://mobile.twitter.com/sikkertrafik"><img src="ticon.svg" alt=""></a></li>
-    </ul>
 
-    <p>Rådet for Sikker Trafik</p>
+    <footer class="footerinfo">
+        <p>Følg Rådet for Sikker Trafik på de sociale medier</p>
+        <ul>
+            <li><a href="https://www.facebook.com/sikkertrafik"><img src="ficon.svg" alt=""></a></li>
+            <li><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFceeg8J8M7PgAAAWm0kH1QnIKs9R_8SUgExA4OsYw3nDISqnkOSTxMM2960CUCcvQ6m-zBY2Tdm2pNOA9xXQQtjDb37wPI6ItvYvR_tk9XXPOzlpMM8rB0eG7ne5Lz6_nwHLo=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fr-det-for-sikker-trafik"><img src="iicon.svg" alt=""></a></li>
+            <li><a href="https://mobile.twitter.com/sikkertrafik"><img src="ticon.svg" alt=""></a></li>
+        </ul>
+
+        <p>Rådet for Sikker Trafik</p>
 
         <p>Lersø Parkallé 111, 2100 København Ø</p>
 
-</footer>
+    </footer>
 
 
 </body>

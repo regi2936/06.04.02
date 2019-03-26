@@ -29,3 +29,57 @@
         document.querySelector(".bars").addEventListener("mouseover", e => {
             console.log(e.target.getAttribute("data-value"));
         })
+
+
+
+
+
+        let valueArray = [0, 0, 0];
+        let offsetArray = [0, 0, 0, 0];
+        let omkreds = 200 * Math.PI;
+        let myData = [0, 0, 0];
+        document.querySelector(".cykel").addEventListener("click", lavArray);
+        document.querySelector(".hjelm").addEventListener("click", lavArray);
+        document.querySelector(".lygte").addEventListener("click", lavArray);
+
+
+        function lavArray() {
+            // console.log(this.classList);
+
+
+
+            if (this.classList.value == "cykel") {
+                console.log("CYKEL");
+                myData[0] = omkreds / 100 * 10;
+                offsetArray[1] = myData[0];
+            }
+            console.log(myData);
+
+            if (this.classList.value == "hjelm") {
+                console.log("HJEML");
+                myData[1] = omkreds / 100 * 50;
+                offsetArray[2] = offsetArray[1] + myData[1];
+            }
+            console.log(myData);
+
+            if (this.classList.value == "lygte") {
+                console.log("LYGTE");
+                myData[2] = omkreds / 100 * 40;
+                offsetArray[3] = offsetArray[2] + myData[2];
+            }
+            console.log("offset: ", offsetArray);
+            animer();
+
+
+        }
+
+
+
+        function animer() {
+            document.querySelectorAll(".piechart circle").forEach((pie, i) => {
+                pie.style.strokeDasharray = myData[i] + " " + omkreds;
+                pie.style.strokeDashoffset = -offsetArray[i];
+                //pie.setAttribute("data-sikkerhed", myData[i]);
+                console.log(pie);
+            });
+        }
