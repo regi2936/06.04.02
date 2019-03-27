@@ -13,7 +13,7 @@ body {
     color: white;
     font-family: 'Exo 2', sans-serif;
     padding-right: 10px;
-
+    background-color: #28292c;
 }
 
 #menu {
@@ -76,11 +76,6 @@ body {
 
 
     }
-
-
-
-
-
 }
 
 @media only screen and (max-width: 700px) {
@@ -90,7 +85,9 @@ body {
         display: none;
     }
 
-
+    .video1 {
+        padding: 10px;
+    }
 }
 
 
@@ -326,8 +323,8 @@ button {
 /*VIDEO*/
 .video1 {
     text-align: center;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 40px;
 }
 
 .video2 {
